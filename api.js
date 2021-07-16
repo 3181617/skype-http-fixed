@@ -97,8 +97,6 @@ class Api extends events_1.default.EventEmitter {
             return;
         }
 		
-		console.log(ev.resource.type);
-		
 		if (typeof ev.resource.from === 'undefined') {
 			return;
 		}
