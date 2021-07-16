@@ -1,0 +1,11 @@
+export declare const HTTPS_SCHEME: string;
+export declare const SKYPEWEB_LOCKANDKEY_APPID: string;
+export declare const SKYPEWEB_LOCKANDKEY_SECRET: string;
+export declare const SKYPEWEB_CLIENTINFO_NAME: string;
+export declare const SKYPEWEB_CLIENTINFO_VERSION: string;
+export declare const SKYPEWEB_API_SKYPE_HOST: string;
+export declare const SKYPEWEB_CONTACTS_HOST: string;
+export declare const SKYPEWEB_DEFAULT_MESSAGES_HOST: string;
+export declare const SKYPEWEB_LOGIN_URL: string;
+export declare const SKYPEWEB_LOGIN_OAUTH: string;
+export declare const SKYPEWEB_SELF_DISPLAYNAME_URL: string;

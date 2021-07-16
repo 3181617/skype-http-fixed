@@ -1,0 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const ucs2_string_1 = require("kryo/types/ucs2-string");
+exports.$Url = new ucs2_string_1.Ucs2StringType({ maxLength: Infinity });
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl9zcmMvdHlwZXMvdXJsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsd0RBQXdEO0FBSTNDLFFBQUEsSUFBSSxHQUFtQixJQUFJLDRCQUFjLENBQUMsRUFBQyxTQUFTLEVBQUUsUUFBUSxFQUFDLENBQUMsQ0FBQyIsImZpbGUiOiJ0eXBlcy91cmwuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBVY3MyU3RyaW5nVHlwZSB9IGZyb20gXCJrcnlvL3R5cGVzL3VjczItc3RyaW5nXCI7XG5cbmV4cG9ydCB0eXBlIFVybCA9IHN0cmluZztcblxuZXhwb3J0IGNvbnN0ICRVcmw6IFVjczJTdHJpbmdUeXBlID0gbmV3IFVjczJTdHJpbmdUeXBlKHttYXhMZW5ndGg6IEluZmluaXR5fSk7XG4iXSwic291cmNlUm9vdCI6Ii4uIn0=
