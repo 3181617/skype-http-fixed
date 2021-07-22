@@ -302,10 +302,11 @@ class MessagesPoller extends events_1.default.EventEmitter {
             };
             const res = await this.io.post(requestOptions);
             if (res.statusCode !== 200) {
-                const cause = http_1.UnexpectedHttpStatusError.create(res, new Set([200]), requestOptions);
-                this.emit("error", incident_1.Incident(cause, "poll", "Unable to poll the messages"));
+                // const cause = http_1.UnexpectedHttpStatusError.create(res, new Set([200]), requestOptions);
+                //this.emit("error", incident_1.Incident(cause, "poll", "Unable to poll the messages"));
+                this.emit("error", res);
                 return;
-            }
+            }			
             const body = JSON.parse(res.body);
             if (body.eventMessages !== undefined) {
                 for (const msg of body.eventMessages) {
