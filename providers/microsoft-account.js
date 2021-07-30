@@ -201,12 +201,10 @@ exports.scrapLiveToken = scrapLiveToken;
 async function getSkypeToken(options) {
     try {
         const startTime = Date.now();
-		
 		const t = await getTokenSkype(options);
 		const skypeTokenObj = JSON.parse(t.body);
-		
-        const res = await requestSkypeToken(options);
-        const scrapped = scrapSkypeTokenResponse(res.body);
+        //const res = await requestSkypeToken(options);
+        //const scrapped = scrapSkypeTokenResponse(res.body);
         // Expires in (seconds) (default: 1 day)
         const expiresIn = typeof skypeTokenObj.expiresIn === "number" ? skypeTokenObj.expiresIn : 864000;
         return {
@@ -305,11 +303,7 @@ exports.getLiveToken = getLiveToken;
 
 async function getTokenSkype(options) {
 	const httpIo = options.httpIo;
-	console.log(httpIo);	
-	console.log(options.liveToken);	
-	
 	const uri = url_1.default.resolve(exports.rpsSkypeTokenUri, path_1.default.posix.join("rps", "v1", "rps", "skypetoken"));
-	
 	const formData = {
         partner: 999,
 		scopes: "client",
@@ -325,7 +319,6 @@ async function getTokenSkype(options) {
     catch (err) {
         throw httpErrors.RequestError.create(err, postOptions);
     }	
-	
 }
 exports.getTokenSkype = getTokenSkype;
 
