@@ -244,7 +244,7 @@ function formatEventMessage(native) {
             resource = formatMessageResource(native.resource);
             break;
 		case "ThreadUpdate":
-		  return native;
+			resource = native.resource;
 		  break;	  			
         default:
             // tslint:disable-next-line:max-line-length
