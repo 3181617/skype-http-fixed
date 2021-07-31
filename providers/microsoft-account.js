@@ -211,7 +211,7 @@ async function getSkypeToken(options) {
         //const res = await requestSkypeToken(options);
         //const scrapped = scrapSkypeTokenResponse(res.body);
         // Expires in (seconds) (default: 1 day)
-        const expiresIn = typeof skypeTokenObj.expiresIn === "number" ? skypeTokenObj.expiresIn : 864000;
+        const expiresIn = typeof skypeTokenObj.expiresIn === "number" ? (skypeTokenObj.expiresIn * 1000) : 864000;
         return {
             value: skypeTokenObj.skypetoken,
             expirationDate: new Date(startTime + expiresIn * 1000),
